@@ -9,6 +9,8 @@
 - tvOS 16.6
 - Xcode 14.13.1
 
+> If you don't have a [develope accont](https://developer.apple.com/programs/) your provisioning profile will be valid for only 7 days and so you will need to redeploy every week.
+
 ## Run on Simulator
 
 Create new project "hackorama"

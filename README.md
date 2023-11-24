@@ -1,9 +1,9 @@
-# Hackorama Home App
+# TV Home Screen
 
-A simple home app for [Apple TV](https://www.apple.com/apple-tv-4k/). Displays calendar events and a dashboard for other home projects:
+A simple home screen [tvOS](https://developer.apple.com/tvos/) app for [Apple TV](https://www.apple.com/apple-tv-4k/). Displays calendar events and a dashboard for other home projects:
 ([Thamburatronica](https://github.com/hackorama/thamburutronica), [ePiCal](https://github.com/hackorama/epical)
 
-Developed using [TVML](https://developer.apple.com/documentation/TVML) for [tvOS](https://developer.apple.com/tvos/).
+Developed using [TVML](https://developer.apple.com/documentation/TVML) for [tvOS](https://developer.apple.com/tvos/) and for local device deploy only, not published to the App Store.
 
 ![TV Main](./docs/images/tv-main.png)
 

@@ -24,11 +24,11 @@ App.onDidEnterBackground = function() {
 }
 
 App.onWillEnterForeground = function() {
-    
+
 }
 
 App.onDidBecomeActive = function() {
-    
+
 }
 
 function no_cache(url) {
@@ -56,38 +56,38 @@ function readTemplate(fileName, asyncProc) {
 var createHome = function(url, title) {
     var homeTemplate = readTemplate(url + "home.xml");
     var dataJson = JSON.parse(readTemplate(url + "data.json"));
-    THAMBURUTRONICA_URL = dataJson["thamburutronica"]  // TODO FIXME global
+    THAMBURUTRONICA_URL = dataJson["thamburutronica"] // TODO FIXME global
     var epicalUrl = dataJson["epical"]
     var updatedHomeTemplate = homeTemplate.replaceAll("${title}", title).replaceAll("${tvbaseurl}", url).replaceAll("${epicalurl}", no_cache(epicalUrl))
     var parser = new DOMParser();
     var homeDoc = parser.parseFromString(updatedHomeTemplate, "application/xml");
     homeDoc.addEventListener("select", handleSelectEvent);
-    
+
     var rows = dataJson["data"]
     var eventSection = homeDoc.getElementById("events");
     eventSection.dataItem = new DataItem();
     var newEventItems = rows.map((result) => {
-                                   let objectItem = new DataItem(result.type, result.id);
-                                   objectItem.thumb = url + result.thumb;
-                                   objectItem.title = result.title;
-                                   objectItem.items = result.items;
-                                   return objectItem;
-                                   });
-        
+        let objectItem = new DataItem(result.type, result.id);
+        objectItem.thumb = url + result.thumb;
+        objectItem.title = result.title;
+        objectItem.items = result.items;
+        return objectItem;
+    });
+
     eventSection.dataItem.setPropertyPath("events", newEventItems);
-    
+
     var gameSection = homeDoc.getElementById("games");
     gameSection.dataItem = new DataItem();
     var newGameItems = rows.map((result) => {
-                                   let objectItem = new DataItem(result.type, result.id);
-                                   objectItem.thumb = url + result.thumb;
-                                   objectItem.title = result.title;
-                                   objectItem.items = result.items;
-                                   return objectItem;
-                                   });
-        
+        let objectItem = new DataItem(result.type, result.id);
+        objectItem.thumb = url + result.thumb;
+        objectItem.title = result.title;
+        objectItem.items = result.items;
+        return objectItem;
+    });
+
     gameSection.dataItem.setPropertyPath("games", newGameItems);
-    
+
     return homeDoc;
 }
 
@@ -99,15 +99,15 @@ function handleSelectEvent(event) {
         var chord = clicked.split("_")[1];
         var chordTitle = event.target.lastChild;
         var chordImage = event.target.firstChild;
-        
+
         homeDoc = navigationDocument.documents[0] // Update when handling multiple docs
         homeDoc.getElementById("chordTitle1").innerHTML = "";
         homeDoc.getElementById("chordTitle2").innerHTML = "";
         homeDoc.getElementById("chordTitle3").innerHTML = "";
         homeDoc.getElementById("chordTitle4").innerHTML = "";
-        
+
         var playing = "🎶 🎼 🎵";
-        
+
         if (chordTitle.getAttribute("status") == "clicked") {
             chordTitle.setAttribute("status", "");
             chord = 0;
@@ -115,12 +115,12 @@ function handleSelectEvent(event) {
         } else {
             chordTitle.setAttribute("status", "clicked");
         }
-        
+
         chordTitle.innerHTML = "...";
         var response = readTemplate(THAMBURUTRONICA_URL + "/" + chord);
         chordTitle.innerHTML = playing;
-        
-        console.log("Thambura chord = " +  chord + " -> " + THAMBURUTRONICA_URL  + "/" + chord + " = " + response);
+
+        console.log("Thambura chord = " + chord + " -> " + THAMBURUTRONICA_URL + "/" + chord + " = " + response);
         // TODO TVML does not seem to update images, DOM will update only on .pushDocument() ?
         // chordImage.src = "..."
     }
