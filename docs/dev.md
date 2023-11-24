@@ -9,7 +9,7 @@
 - tvOS 16.6
 - Xcode 14.13.1
 
-> If you don't have a [develope accont](https://developer.apple.com/programs/) your provisioning profile will be valid for only 7 days and so you will need to redeploy every week.
+> If you don't have a [developer account](https://developer.apple.com/programs/) your provisioning profile will be valid for only 7 days and so you will need to redeploy every week.
 
 ## Run on Simulator
 
@@ -87,7 +87,7 @@ $ ssh mini
 
 ## Update server IP in AppDelegate.swift
 
-static let tvBaseURL = "http://192.168.1.163:9001/"
+`static let tvBaseURL = "http://192.168.1.163:9001/"`
 
 Run on Simulator to confirm server IP connection
 
