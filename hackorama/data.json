@@ -1,0 +1,144 @@
+{
+  "thamburutronica": "http://192.168.1.163/chord",
+  "epical": "http://192.168.1.163:8888/epical.png",
+  "data": [
+    {
+      "title": "OCT 31 Trick or Treat 🎃",
+      "type": "events",
+      "id": "101",
+      "thumb": "images/transparent.png"
+    },
+    {
+      "title": "SEP 22 End of Summer",
+      "type": "events",
+      "id": "102",
+      "thumb": "images/transparent.png"
+    },
+    {
+      "title": "SEP 10 Season Opener Go Niners !",
+      "type": "events",
+      "id": "103",
+      "thumb": "images/transparent.png"
+    },
+    {
+      "title": "SEP 7 NFL 2023 Kickoff",
+      "type": "events",
+      "id": "104",
+      "thumb": "images/transparent.png"
+    },
+    {
+      "title": "SEP 4 Labor Day",
+      "type": "events",
+      "id": "105",
+      "thumb": "images/transparent.png"
+    },
+    {
+      "title": "2023 SF 3-0",
+      "type": "games",
+      "id": "10",
+      "thumb": "images/sf.png"
+    },
+    {
+      "title": "SF PIT 30-7 🏆",
+      "type": "games",
+      "id": "11",
+      "thumb": "images/pit.png"
+    },
+    {
+      "title": "SF LAR 30-23 🏆",
+      "type": "games",
+      "id": "12",
+      "thumb": "images/lar.png"
+    },
+    {
+      "title": "NYG SF 30-12 🏆",
+      "type": "games",
+      "id": "13",
+      "thumb": "images/nyg.png"
+    },
+    {
+      "title": "1 OCT 1:25",
+      "type": "games",
+      "id": "14",
+      "thumb": "images/ari.png"
+    },
+    {
+      "title": "8 OCT 5:20 SNF",
+      "type": "games",
+      "id": "15",
+      "thumb": "images/dal.png"
+    },
+    {
+      "title": "15 OCT 10:00",
+      "type": "games",
+      "id": "16",
+      "thumb": "images/cle.png"
+    },
+    {
+      "title": "23 OCT 5:15",
+      "type": "games",
+      "id": "17",
+      "thumb": "images/min.png"
+    },
+    {
+      "title": "29 OCT 1:25",
+      "type": "games",
+      "id": "18",
+      "thumb": "images/cin.png"
+    },
+    {
+      "title": "12 NOV 10:00",
+      "type": "games",
+      "id": "19",
+      "thumb": "images/jax.png"
+    },
+    {
+      "title": "19 NOV 1:05",
+      "type": "games",
+      "id": "20",
+      "thumb": "images/tb.png"
+    },
+    {
+      "title": "23 NOV 5:20",
+      "type": "games",
+      "id": "21",
+      "thumb": "images/sea.png"
+    },
+    {
+      "title": "3 DEC 1:25",
+      "type": "games",
+      "id": "22",
+      "thumb": "images/phi.png"
+    },
+    {
+      "title": "10 DEC 1:05",
+      "type": "games",
+      "id": "23",
+      "thumb": "images/sea.png"
+    },
+    {
+      "title": "17 DEC 1:05",
+      "type": "games",
+      "id": "24",
+      "thumb": "images/ari.png"
+    },
+    {
+      "title": "25 DEC 5:15",
+      "type": "games",
+      "id": "25",
+      "thumb": "images/bal.png"
+    },
+    {
+      "title": "31 DEC 10:00",
+      "type": "games",
+      "id": "26",
+      "thumb": "images/wsh.png"
+    },
+    {
+      "title": "7 JAN TBD",
+      "type": "games",
+      "id": "27",
+      "thumb": "images/lar.png"
+    }
+  ]
+}

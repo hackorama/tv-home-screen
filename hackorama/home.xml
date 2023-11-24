@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+    <head>
+       <style>
+         .description {
+           tv-text-style: body;
+           color: rgb(255,255,255);
+           background-color: rgba(0,0,0,0.2);
+           tv-text-max-lines: 3;
+         }
+       </style>
+     </head>
+   <catalogTemplate>
+      <banner>
+         <title>Hackorama Home</title>
+      </banner>
+      <list>
+         <section>
+            <listItemLockup>
+               <title>Events</title>
+               <decorationLabel>📆</decorationLabel>
+               <relatedContent>
+                  <grid>
+                      <prototypes>
+                          <lockup prototype="events">
+                              <img binding="@src:{thumb};" width="1024" height="64"/>
+                              <overlay>
+                                  <title style="tv-text-highlight-style: marquee-on-highlight; color=rgb(255,0,0);"  binding="textContent:{title};"/>
+                              </overlay>
+                           </lockup>
+                      </prototypes>
+                      <section id="events" binding="items:{events};"/>
+                  </grid>
+               </relatedContent>
+            </listItemLockup>
+         </section>
+         <section>
+            <listItemLockup>
+               <title>Go Niners</title>
+               <decorationLabel>🏈</decorationLabel>
+               <relatedContent>
+                  <grid>
+                      <prototypes>
+                          <lockup prototype="games">
+                              <img binding="@src:{thumb};" width="300" height="300"/>
+                                  <title style="tv-text-highlight-style: marquee-on-highlight; color=rgb(255,0,0);"  binding="textContent:{title};"/>
+                          </lockup>
+                      </prototypes>
+                      <section id="games" binding="items:{games};"/>
+                  </grid>
+               </relatedContent>
+            </listItemLockup>
+         </section>
+         <section>
+            <listItemLockup>
+               <title>Thamburutronica</title>
+               <decorationLabel>🎼</decorationLabel>
+               <relatedContent>
+                  <grid>
+                     <section>
+                        <lockup id="chord_1">
+                           <img src="${tvbaseurl}/images/chord.png" width="1024" height="10" />
+                           <title id="chordTitle1" style="tv-text-highlight-style: marquee-on-highlight">പഞ്ചമം</title>
+                        </lockup>
+                     </section>
+                     <section>
+                        <lockup id="chord_2">
+                           <img src="${tvbaseurl}/images/chord.png" width="1024" height="10" />
+                           <title id="chordTitle2" style="tv-text-highlight-style: marquee-on-highlight">സരണ</title>
+                        </lockup>
+                     </section>
+                     <section>
+                        <lockup id="chord_3">
+                           <img src="${tvbaseurl}/images/chord.png" width="1024" height="10" />
+                           <title id="chordTitle3" style="tv-text-highlight-style: marquee-on-highlight">അനു സരണ</title>
+                        </lockup>
+                     </section>
+                     <section>
+                        <lockup id="chord_4">
+                           <img src="${tvbaseurl}/images/chord.png" width="1024" height="10" />
+                           <title id="chordTitle4" style="tv-text-highlight-style: marquee-on-highlight">മന്ത്രം</title>
+                        </lockup>
+                     </section>
+                  </grid>
+               </relatedContent>
+            </listItemLockup>
+         </section>
+         <section>
+            <listItemLockup>
+               <title>ePiCal</title>
+               <decorationLabel>🖼️</decorationLabel>
+               <relatedContent>
+                  <grid>
+                     <section>
+                        <lockup>
+                            <img src="${epicalurl}" width="656" height="869" />
+                        </lockup>
+                     </section>
+                  </grid>
+               </relatedContent>
+            </listItemLockup>
+         </section>
+      </list>
+   </catalogTemplate>
+</document>

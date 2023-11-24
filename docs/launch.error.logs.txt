@@ -1,0 +1,81 @@
+
+<OSLaunchdJob | handle=8B473826-736E-484C-948D-DDF1D068EAD5>: job failed to spawn, plist={
+	ProcessType => App
+	EnableTransactions => false
+	_ManagedBy => com.apple.runningboard
+	CFBundleIdentifier => com.hackorama.hackorama
+	_ResourceCoalition => application<com.hackorama.hackorama>
+	ThrottleInterval => 2147483647
+	PersonaEnterprise => 1000
+	MachServices => {
+	}
+	EnablePressuredExit => false
+	InitialTaskRole => 1
+	UserName => mobile
+	EnvironmentVariables => {
+		TMPDIR => /private/var/mobile/Containers/Data/Application/10F83899-99B5-4F19-98CE-BC1BBEA76A50/tmp
+		HOME => /private/var/mobile/Containers/Data/Application/10F83899-99B5-4F19-98CE-BC1BBEA76A50
+		CFFIXED_USER_HOME => /private/var/mobile/Containers/Data/Application/10F83899-99B5-4F19-98CE-BC1BBEA76A50
+	}
+	_AdditionalProperties => {
+		RunningBoard => {
+			Managed => true
+			RunningBoardLaunchedIdentity => {
+				TYPE => 3
+				EAI => com.hackorama.hackorama
+				PERS => 01A48AA1-9734-423C-B1D7-D0D133383A0A
+			}
+			RunningBoardLaunched => true
+		}
+	}
+	ExitTimeOut => 1
+	<…>
+
+
+---
+
+Process start failed with Error Domain=NSPOSIXErrorDomain Code=85 "Bad executable (or shared library)" UserInfo={NSLocalizedDescription=Launchd job spawn failed}
+
+---
+
+Launch failed with Error Domain=NSPOSIXErrorDomain Code=85 "Bad executable (or shared library)" UserInfo={NSLocalizedDescription=Launchd job spawn failed}
+
+---
+
+Bootstrapping failed for <FBApplicationProcess: 0x129f34900; application<com.hackorama.hackorama>:<invalid>> with error: <NSError: 0x283e0df50; domain: RBSRequestErrorDomain; code: 5; reason: "Launch failed."> {
+    NSUnderlyingError = <NSError: 0x283e0d200; domain: NSPOSIXErrorDomain; code: 85>;
+}
+---
+
+<private> not valid: 0xe8008015: A valid provisioning profile for this executable was not found
+
+---
+
+[FBSSystemService][0xa77f] Error handling open request for com.hackorama.hackorama: <NSError: 0x2809cadc0; domain: FBSOpenApplicationServiceErrorDomain; code: 1 (RequestDenied); reason: "The request was denied by service delegate (PBProcessManager) for reason: ServiceUnavailable ("Transaction's process <FBApplicationProcess: 0x129f34900; application<com.hackorama.hackorama>:<invalid>> is not running: 
+<FBApplicationUpdateScenesTransaction: 0x280ed45a0>
+    Completed: NO
+    ClientIdentity: application<com.hackorama.hackorama>
+    Waits for scene commits: YES
+    Interruptible? YES
+    Milestones pending: (none)
+    Audit history: 
+        TIME: 06:56:27.745; DESCRIPTION: Life assertion taken for reason: beginning
+        TIME: 06:56:27.745; DESCRIPTION: Adding child transaction: <FBApplicationProcessLaunchTransaction: 0x2808d2760>
+        TIME: 06:56:27.745; DESCRIPTION: State changed from 'Initial' to 'Working'
+        TIME: 06:56:27.745; DESCRIPTION: Life assertion removed for reason: beginning
+    Concurrent child transactions: 
+
+
+---
+
+Scene FBSceneManager/com.hackorama.hackorama-default update failed: <NSError: 0x283f92820; domain: FBSceneErrorDomain; code: 1 (operation-failed); reason: "Scene update failed."> {
+    NSUnderlyingError = <NSError: 0x283fa5950; domain: FBWorkspaceScene; code: 1; reason: "Client process exited.">;
+}
+----
+
+Scene FBSceneManager/com.hackorama.hackorama-default update failed: <NSError: 0x283fa2940; domain: FBSceneErrorDomain; code: 1 (operation-failed); reason: "Scene update failed."> {
+    NSUnderlyingError = <NSError: 0x283f98000; domain: FBWorkspaceScene; code: 1; reason: "Client process exited.">;
+}
+
+----
+
