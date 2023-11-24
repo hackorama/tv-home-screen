@@ -1,4 +1,4 @@
-# TV Home Screen
+# TVHomeScreen
 
 A simple home screen [tvOS](https://developer.apple.com/tvos/) app for [Apple TV](https://www.apple.com/apple-tv-4k/). Displays calendar events and a dashboard for other home projects:
 ([Thamburatronica](https://github.com/hackorama/thamburutronica), [ePiCal](https://github.com/hackorama/epical)
